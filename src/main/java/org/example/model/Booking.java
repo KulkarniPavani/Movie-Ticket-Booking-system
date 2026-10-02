@@ -74,4 +74,3 @@ import java.time.LocalDateTime;
             this.bookingStatus = bookingStatus;
         }
     }
-

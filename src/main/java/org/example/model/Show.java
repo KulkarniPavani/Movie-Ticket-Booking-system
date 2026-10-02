@@ -4,26 +4,15 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Show {
-
     private int showId;
-    private Theatre theatre;
     private Movie movie;
+    private Theatre theatre;
     private LocalDate showDate;
     private LocalTime startTime;
     private LocalTime endTime;
+    private int screenId;
 
-    public Show() {
-    }
-
-    public Show(int showId, Theatre theatre, Movie movie,
-                LocalDate showDate, LocalTime startTime, LocalTime endTime) {
-        this.showId = showId;
-        this.theatre = theatre;
-        this.movie = movie;
-        this.showDate = showDate;
-        this.startTime = startTime;
-        this.endTime = endTime;
-    }
+    public Show() {}
 
     public int getShowId() {
         return showId;
@@ -33,20 +22,20 @@ public class Show {
         this.showId = showId;
     }
 
-    public Theatre getTheatre() {
-        return theatre;
-    }
-
-    public void setTheatre(Theatre theatre) {
-        this.theatre = theatre;
-    }
-
     public Movie getMovie() {
         return movie;
     }
 
     public void setMovie(Movie movie) {
         this.movie = movie;
+    }
+
+    public Theatre getTheatre() {
+        return theatre;
+    }
+
+    public void setTheatre(Theatre theatre) {
+        this.theatre = theatre;
     }
 
     public LocalDate getShowDate() {
@@ -71,5 +60,13 @@ public class Show {
 
     public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
+    }
+
+    public int getScreenId() {
+        return screenId;
+    }
+
+    public void setScreenId(int screenId) {
+        this.screenId = screenId;
     }
 }

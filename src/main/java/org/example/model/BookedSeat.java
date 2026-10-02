@@ -6,7 +6,7 @@ public class BookedSeat {
     private Booking booking;
 
     public BookedSeat() {
-
+    }
     public BookedSeat(int bookedSeatId, Seat seat, Booking booking) {
         this.bookedSeatId = bookedSeatId;
         this.seat = seat;
